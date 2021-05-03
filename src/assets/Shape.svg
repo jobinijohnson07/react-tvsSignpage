@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="FRESH-DESIGN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login-" transform="translate(-796.000000, -302.000000)" fill="#22B6E6" fill-rule="nonzero">
+            <g id="Account" transform="translate(796.000000, 302.000000)">
+                <path d="M7,6 C7,2.6862915 9.6862915,0 13,0 C16.3137085,0 19,2.6862915 19,6 C19,9.3137085 16.3137085,12 13,12 C9.6862915,12 7,9.3137085 7,6 Z M23,26 L3,26 C1.34314575,26 0,24.6568542 0,23 C0,18.0294373 4.02943725,14 9,14 L17,14 C21.9705627,14 26,18.0294373 26,23 C26,24.6568542 24.6568542,26 23,26 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
