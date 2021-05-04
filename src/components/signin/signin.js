@@ -126,9 +126,7 @@ class signin extends Component {
                             <p className="forgot-password">Forgot Password?</p> 
                           </div>
                           <div class="signin-button-wrapper">
-                            <button type="submit" value="submit" className="signin-button" >
-							                Login
-						                </button>
+                            <button type="submit" value="submit" className="signin-button" >Login</button>
                           </div>
                         </form>
                       </div>
