@@ -5,7 +5,6 @@ import loginpage from '../../assets/loginpage.svg'
 import shape from '../../assets/Shape.svg'
 import password from '../../assets/Password.svg'
 
-
 class signin extends Component {
     constructor() {
         super();
@@ -79,15 +78,7 @@ class signin extends Component {
               errors["password"] = "Please add at least 6 charachter.";
           }
         }
-    
-        if (typeof input["password"] !== "undefined" && typeof input["confirm_password"] !== "undefined") {
-            
-          if (input["password"] != input["confirm_password"]) {
-            isValid = false;
-            errors["password"] = "Passwords don't match.";
-          }
-        }
-    
+  
         this.setState({
           errors: errors
         });
