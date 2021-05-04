@@ -98,47 +98,47 @@ class signin extends Component {
     render() {
         return (
               <div className="container">
-                    <div className="col-lg-12 mb-4">
-                       <img src={logo} className="img_logo" /> 
+                  <div className="col-lg-12 mb-4">
+                    <img src={logo} className="img_logo" /> 
+                  </div>
+                  <div class= "row">
+                    <div class="col-md-6 p-0 ">       
+                      <img src={loginpage} className="img_loginpage img-fluid" />
                     </div>
-                    <div class= "row">
-                        <div class="col-md-6 p-0 ">       
-                            <img src={loginpage} className="img_loginpage img-fluid" />
-                        </div>
-                        <div class="col-md-6 px-0">
-                           <div className="signin-column ">
-                           <form onSubmit={this.handleSubmit}>
-                              <div className="content-form">
-                              <p className="signin-content ">Welcome to <br />TVS Supply Chain Solutions</p>
-                                <p className="signin-title">Login to continue</p> 
-                              </div> 
-                              <div class="signin-input-wrapper">
-                                <img src={shape} className="input-icon" />
-                                <input type="text" name="username" onChange={this.handleChange} value={this.state.input.userName} className="signin-input" placeholder="Username" id="username"  />
-                              </div>
-                              <div className="text-danger">{this.state.errors.username}</div>
-                              <div class="signin-input-wrapper">
-                                <img src={password} className="input-icon" />
-                                <input type="password" name="password" onChange={this.handleChange} value={this.state.input.password} className="signin-input" placeholder="Password" id="password"  />
-                              </div>  
-                              <div className="text-danger">{this.state.errors.password}</div> 
-                              <div>
-                                <p className="forgot-password">Forgot Password?</p> 
-                              </div>
-                              <div class="signin-button-wrapper">
-                               <button type="submit" value="submit" className="signin-button" >
-							                  Login
-						                   </button>
-                              </div>
-                            </form>
-                           </div>
-                        </div>
-                      </div>                   
-                      <div class="footer mt-5">
-                        <p className="copy-right">Copyright.TVS Supply Chain Solutions. All rights reserved</p>
+                    <div class="col-md-6 px-0">
+                      <div className="signin-column ">
+                        <form onSubmit={this.handleSubmit}>
+                          <div className="content-form">
+                            <p className="signin-content ">Welcome to <br />TVS Supply Chain Solutions</p>
+                            <p className="signin-title">Login to continue</p> 
+                          </div> 
+                          <div class="signin-input-wrapper">
+                            <img src={shape} className="input-icon" />
+                            <input type="text" name="username" onChange={this.handleChange} value={this.state.input.userName} className="signin-input" placeholder="Username" id="username"  />
+                          </div>
+                          <div className="text-danger">{this.state.errors.username}</div>
+                            <div class="signin-input-wrapper">
+                              <img src={password} className="input-icon" />
+                              <input type="password" name="password" onChange={this.handleChange} value={this.state.input.password} className="signin-input" placeholder="Password" id="password"  />
+                            </div>  
+                            <div className="text-danger">{this.state.errors.password}</div> 
+                          <div>
+                            <p className="forgot-password">Forgot Password?</p> 
+                          </div>
+                          <div class="signin-button-wrapper">
+                            <button type="submit" value="submit" className="signin-button" >
+							                Login
+						                </button>
+                          </div>
+                        </form>
                       </div>
-                    </div>  
-             );
-           }
-       }
+                    </div>
+                  </div>                   
+                  <div class="footer mt-5">
+                    <p className="copy-right">Copyright.TVS Supply Chain Solutions. All rights reserved</p>
+                  </div>
+                </div>  
+              );
+            }
+          }
 export default signin;
