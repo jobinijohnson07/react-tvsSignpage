@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './signin.css';
-import logo from '../assets/logo.svg'
-import loginpage from '../assets/loginpage.svg'
-import shape from '../assets/Shape.svg'
-import password from '../assets/Password.svg'
+import logo from '../../assets/logo.svg'
+import loginpage from '../../assets/loginpage.svg'
+import shape from '../../assets/Shape.svg'
+import password from '../../assets/Password.svg'
 
 
 class signin extends Component {
@@ -97,52 +97,47 @@ class signin extends Component {
 
     render() {
         return (
-          
-                <div className="content-login row">
+              <div className="container">
                     <div className="col-lg-12 mb-4">
                        <img src={logo} className="img_logo" /> 
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex p-0">
-                        <div class="col-lg-6 p-0 ">
-                            <p className="content pl-4 mb-0"> Welcome to <br /> TVS Supply Chain Solutions </p>
+                    <div class= "row">
+                        <div class="col-md-6 p-0 ">       
                             <img src={loginpage} className="img_loginpage img-fluid" />
                         </div>
-                       <div class="col-lg-6 p-0 pr-4 h-100">
-                           <div className="second-col h-100">
+                        <div class="col-md-6 px-0">
+                           <div className="signin-column ">
                            <form onSubmit={this.handleSubmit}>
                               <div className="content-form">
-                                <p className="required">Sign in</p> 
+                              <p className="signin-content ">Welcome to <br />TVS Supply Chain Solutions</p>
+                                <p className="signin-title">Login to continue</p> 
                               </div> 
-
                               <div class="signin-input-wrapper">
                                 <img src={shape} className="input-icon" />
-                                <input type="text" name="username" onChange={this.handleChange} value={this.state.input.userName} className="signin-input" id="username"  />
+                                <input type="text" name="username" onChange={this.handleChange} value={this.state.input.userName} className="signin-input" placeholder="Username" id="username"  />
                               </div>
-
-                              <div className="text-danger control">{this.state.errors.username}</div>
-
+                              <div className="text-danger">{this.state.errors.username}</div>
                               <div class="signin-input-wrapper">
                                 <img src={password} className="input-icon" />
-                                <input type="password" name="password" onChange={this.handleChange} value={this.state.input.password} className="signin-input" id="password"  />
+                                <input type="password" name="password" onChange={this.handleChange} value={this.state.input.password} className="signin-input" placeholder="Password" id="password"  />
                               </div>  
-
-                              <div className="text-danger change">{this.state.errors.password}</div> 
-
+                              <div className="text-danger">{this.state.errors.password}</div> 
                               <div>
                                 <p className="forgot-password">Forgot Password?</p> 
                               </div>
-
-                             <div class="form-group">
+                              <div class="signin-button-wrapper">
                                <button type="submit" value="submit" className="signin-button" >
 							                  Login
-						                    </button>
-                             </div>
-
-                             </form>
+						                   </button>
+                              </div>
+                            </form>
                            </div>
                         </div>
-                    </div>
-                </div>    
+                      </div>                   
+                      <div class="footer mt-5">
+                        <p className="copy-right">Copyright.TVS Supply Chain Solutions. All rights reserved</p>
+                      </div>
+                    </div>  
              );
            }
        }

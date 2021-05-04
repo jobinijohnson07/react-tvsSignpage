@@ -16,3 +16,19 @@ code {
   font-family: "SourceSansPro-SemiBold";
   src: url("./assets/font/SourceSansPro-Regular.ttf");
 }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./assets/font/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./assets/font/OpenSans-Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("./assets/font/OpenSans-SemiBold.ttf");
+}
